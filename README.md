@@ -1,6 +1,6 @@
 # Clock
 
-Live:
+Live: https://davidefolk.github.io/Clock/
 
 My project, minimal clock with options for personalize the style.
 
