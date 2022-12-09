@@ -53,6 +53,11 @@ body {
         left: 3px;
         top: 3px;
     }
+
+    .number {
+        font-size: 20vh;
+        line-height: 20vh;
+    }
 }
 
 /* sidebar */
