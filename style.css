@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans&family=Martian+Mono&family=Press+Start+2P&family=Ubuntu&family=Zen+Dots&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+
+:root {
+    /* darkest grey*/
+    --clr-grey-2: hsl(211, 39%, 23%);
+    --clr-grey-3: hsl(209, 34%, 30%);
+    --clr-grey-4: hsl(209, 28%, 39%);
+    /* grey used for paragraphs */
+    --clr-grey-5: hsl(210, 22%, 49%);
+    --clr-grey-6: hsl(209, 23%, 60%);
+    --clr-black: #222;
+    --transition: all 0.3s linear;
+}
+
+body {
+    background-color: red;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s linear;
+}
+
+.number {
+    font-size: 30vh;
+    line-height: 30vh;
+    color: white;
+    font-family: "Martian Mono", monospace;
+}
+
+.col-12 {
+    height: 33vh;
+    max-height: 33vh;
+}
+
+#menuIcon {
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+#menuIcon:hover {
+    transform: scale(1.20);
+    transition: var(--transition);
+}
+
+@media screen and (max-width: 670px) {
+    #menuIcon {
+        font-size: 2rem;
+        position: absolute;
+        left: 3px;
+        top: 3px;
+    }
+}
+
+/* sidebar */
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.close-btn {
+    font-size: 2rem;
+    background: transparent;
+    border-color: transparent;
+    transition: var(--transition);
+    color: white;
+}
+
+.close-btn:hover {
+    transform: scale(1.20);
+}
+
+.links a {
+    display: block;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    padding: 1rem 1.5rem;
+    color: var(--clr-grey-5);
+    transition: var(--transition);
+}
+
+.links a:hover {
+    background: var(--clr-grey-5);
+    color: var(--clr-black);
+    padding-left: 1.75rem;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--clr-black);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 1rem;
+    box-shadow: var(--clr-red-dark);
+    transition: var(--transition);
+    transform: translate(-100%);
+    z-index: 2;
+}
+
+.show-sidebar {
+    transform: translate(0);
+}
+
+@media screen and (min-width: 676px) {
+    .sidebar {
+        width: 400px;
+    }
+}
+
+.titleSidebar {
+    color: aliceblue;
+}
+
+.copyright {
+    justify-self: center;
+    display: flex;
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+    color: aliceblue;
+}
+
+.social-icon {
+    color: aliceblue;
+}
