@@ -44,12 +44,11 @@ let arrFont = [
 	'"Zen Dots", cursive',
 ];
 
-let num = 1;
+let num = 0;
 
 $('#changeFont').click(function (e) {
 	e.preventDefault();
-	if(num > arrFont.length) num = 1;
+	if (num > arrFont.length - 1) num = 0;
 	$('.number').css('font-family', arrFont[num]);
 	num++;
-	console.log(num);
 });
